@@ -7,5 +7,4 @@ router.register('language', views.LanguageView)
 
 urlpatterns = [
     path('', include(router.urls))
-    
 ]

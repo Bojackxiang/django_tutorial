@@ -82,7 +82,15 @@ def __str__(self):
 python3 manage.py runserver
 check localhost:8000, and admin
 
+# install ckeditor 
+* https://www.youtube.com/watch?v=L6y6cn1XUfw
+
 ############################## some key ideas ##############################
 when you are trying to make some models (language here) into api, only modifing 
 serializers.py in your Language package.
+
+
+############################## error analyzing ##############################
+1. You are trying to add a non-nullable field 'description' to language without a default; we can't do that (the database needs something to populate existing rows).
+现在数据库已经有了一些数据，为其增加新的属性，要设置default
 

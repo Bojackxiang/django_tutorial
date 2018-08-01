@@ -8,3 +8,4 @@ from .serializers import LanguageSerializer
 class LanguageView(viewsets.ModelViewSet):
     queryset = Language.objects.all()
     serializer_class = LanguageSerializer
+    
